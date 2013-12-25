@@ -1,6 +1,8 @@
 # BoJSON
 可以叫剥JSON，也是播JSON, 仿  http://www.json-generator.com/
 
+点击这里预览效果  http://jser.me/BoJSON/
+
 ## 用法
 
 ```javascript
