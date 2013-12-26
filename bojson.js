@@ -43,7 +43,7 @@
                 return [true, false][this.numeric(0, 1)]
             },
             gender: function() {
-                return ['男', '女'][this.numeric(0, 1)]
+                return ['male', 'female'][this.numeric(0, 1)]
             }
         }
     })();
@@ -59,7 +59,7 @@
         if (isString(tmpl)) {
             tmpl = tmpl.replace(reg, function(input, command, args) {
                 if (helpers[command]) {
-                    return helpers[command].apply(helpers, args ? args.split(', ') : [])
+                    return helpers[command].apply(helpers, args ? args.split(',') : [])
                 }
 
                 return input
@@ -111,7 +111,7 @@
 
     bojson.registeHelper = function(name, func) {
         if (helpers[name]) {
-            throw new Error('helper already defined ')
+            throw new Error('helper named ' + name + ' already defined ')
         }
 
         helpers[name] = func
@@ -119,6 +119,3 @@
 
     this.BoJSON = bojson
 })(this);
-
-
-//console.log(JSON.stringify(BoJSON(j), null, 4));

@@ -1,6 +1,6 @@
 (function() {
     var defaultTmpl = [
-        '{{repeat(5, 7)}}', {
+        '{{repeat(2, 4)}}', {
             //id: '{{index}}',
             guid: '{{guid}}',
             isActive: '{{bool}}',
@@ -11,19 +11,19 @@
             gender: '{{gender}}',
             company: '{{company}}',
             email: '{{email}}',
-            phone: '+1 {{phone}}',
-            address: '{{numeric(100,999)}} {{street}}, {{city}}, {{state}}, {{numeric(100,10000)}}',
-            about: '{{lorem(1,paragraphs)}}',
-            registered: '{{date(YYYY-MM-ddThh:mm:ss Z)}}',
+            //phone: '+1 {{phone}}',
+            address: '{{area}} , {{city}}, {{numeric(100,10000)}}',
+            about: '{{paragraph}}',
+            registered: '{{date(yyyy-MM-dd hh:mm:ss)}}',
             latitude: '{{numeric(-90.000001, 90)}}',
             longitude: '{{numeric(-180.000001, 180)}}',
             tags: [
-                '{{repeat(7)}}',
-                '{{lorem(1)}}'
+                '{{repeat(4)}}',
+                '{{word(3,9)}}'
             ],
             friends: [
                 '{{repeat(3)}}', {
-                    id: '{{index}}',
+                    //id: '{{index}}',
                     name: '{{firstName}} {{surname}}'
                 }
             ],
