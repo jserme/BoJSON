@@ -118,21 +118,21 @@
     }
 
     //loader
-    if (isObject(module) && module.exports) {
+    if (typeof module === 'object' && module.exports) {
         // CommonJS
         module.exports = BoJSON
-    } else if (isFunction(define)) {
-        if (define.amd) {
-            // AMD
-            define(function() {
-                return BoJSON
-            })
-        } else if (define.cmd) {
-            // CMD
-            define(function() {
-                return BoJSON
-            })
-        }
+
+    } else if (typeof define === "function" && define.amd) {
+        // AMD modules
+        define(function() {
+            return BoJSON
+        })
+
+    } else if (typeof define === "function" && define.cmd) {
+        // CMD modules
+        define(function() {
+            return BoJSON
+        })
     }
 
     this.BoJSON = bojson
