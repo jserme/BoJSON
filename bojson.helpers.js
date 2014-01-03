@@ -17,7 +17,6 @@
     }
 
     var methodInMock = 'natural,integer,float,character,string,range,date,time,datetime,image,dataImage,color,paragraph,sentence,word,title,first,last,name,url,domain,email,ip,tld,area,region,guid,id'.split(',');
-    //capitalize, upper, lower, pick, shuffle
 
     var key;
 
