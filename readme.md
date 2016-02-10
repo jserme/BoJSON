@@ -43,7 +43,8 @@ console.log(JSON.stringify(BoJSON(tmpl), null, 4));
 * http://mockjs.com/dist/mock.js 
 * bojson.helpers.js 
 
-详细的扩展如下, 部分支持参数，详见[http://mockjs.com/#Mock.Random](http://mockjs.com/#Mock.Random)
+详细的扩展如下,
+部分支持参数，详见[https://github.com/nuysoft/Mock/wiki/Mock.Random](https://github.com/nuysoft/Mock/wiki/Mock.Random)
 
 模板 | 说明 
 ---  |---|
