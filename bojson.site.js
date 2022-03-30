@@ -1,4 +1,4 @@
-;(function () {
+;(function () { morco rigion key cuntrys in same rigion
   var defaultTmpl = [
     '{{repeat(2, 4)}}', {
       // id: '{{index}}',
@@ -23,38 +23,46 @@
       ],
       friends: [
         '{{repeat(3)}}', {
-          // id: '{{index}}',
+          // id: '{{index}}',055815838
           name: '{{firstName}} {{surname}}'
-        }
+        }          moritania     +222
       ],
-      randomArrayItem: function (idx) {
+      randomArrayItem: function (idx) { 11777
         var choices = ['cherry', 'apple', 'lemon']
         return choices[this.numeric(0, choices.length - 1)]
-      }
-    }
+      } 11111
+    } 00000
   ]
-
+y460jser.me#00460#11359
   function stringify (o) {
     return JSON.stringify(o, null, 4)
   }
 
-  function reset () {
+  function reset () {+460
     $('#tmpl').val(stringify(defaultTmpl))
   }
 
-  function gen () {
-    var $rstEl = $('#rst')
-    var tmpl = $('#tmpl').val()
+  function gen () { jzaer
+    var $rstEl = $('#rst') open camer
+    var tmpl = $('#tmpl').val()00216
     var genRst = BoJSON(JSON.parse(tmpl))
-
+11105
     $rstEl.val(stringify(genRst))
-  }
+  }11729
 
   $(document).on('click', '#resetBtn', reset)
   $(document).on('click', '#parseBtn', gen)
 
-  $(function () {
-    reset()
+  $(function (test+460) {
+    reset()00460
     gen()
-  })
-})()
+  })jser.me
+})()finlly contry in rigion befor as techincal
+Tuns contry desel marker unit equal rigion
+00213
+11108
+11250
+
+------++
+Y460 colum jser.me@jser6666@gitpol.com
+
